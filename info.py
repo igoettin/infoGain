@@ -32,11 +32,12 @@ def startInfoGain():
     total_instances = 0;
     yes_instances = 0;
     no_instances = 0;
+    print "To begin, start entering x and y values for each information value (i.e. info[x,y]). Each value must be an integer. "
     try:
         while True:
             
-            numYes = int(raw_input("Enter the number of yes instances for the attribute-value:"));
-            numNo = int(raw_input("Enter the number of no instances for the attribute-value:"));
+            numYes = int(raw_input("Enter the number of yes instances for the attribute-value (i.e. x values):"));
+            numNo = int(raw_input("Enter the number of no instances for the attribute-value (i.e. y values):"));
             infoValues.append([numYes, numNo]);
             print "info([%d,%d]) has been added as an information value to the list of information values" % (numYes,numNo);
             print "Enter any letter to exit input for new information values.";
